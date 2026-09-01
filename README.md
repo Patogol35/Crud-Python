@@ -4,38 +4,63 @@ Aplicación web para la gestión de productos mediante una interfaz moderna desa
 
 El sistema permite realizar operaciones CRUD completas sobre los productos: crear, consultar, actualizar y eliminar.
 
-🚀 Tecnologías utilizadas
-Frontend
-React
-Vite
-Material UI (MUI)
-JavaScript
-CSS
+🚀 Tecnologías utilizadas:
+
+- Frontend
+  
+- React
+  
+- Vite
+  
+- Material UI (MUI)
+
+- JavaScript
+
+- CSS
+
 Backend
-Python
-Flask
-Flask-CORS
-API REST
+
+- Python
+
+- Flask
+
+- Flask-CORS
+
+- API REST
+
 Base de datos
-SQLite
+
+- SQLite
+
 ✨ Funcionalidades
-📋 Listar productos
-➕ Crear productos
-✏️ Editar productos
-🗑️ Eliminar productos
-🔄 Actualizar listado
-🔔 Notificaciones mediante Snackbar
+
+- Listar productos
+
+- Crear productos
+
+- Editar productos
+
+- Eliminar productos
+
+- Actualizar listado
+
+- Notificaciones mediante Snackbar
 
 ⚙️ Instalación
+
 1. Clonar el repositorio
-git clone https://github.com/TU-USUARIO/TU-REPOSITORIO.git
+
+git clone https://github.com/Patogol35/crud-python/
+
 2. Entrar al proyecto
-cd TU-REPOSITORIO
-🐍 Configuración del Backend
+
+cd crud-python
+
+3. Configuración del Backend
 
 Entrar a la carpeta del backend:
 
-cd backend
+cd crud-python
 
 Crear un entorno virtual:
 
@@ -56,11 +81,13 @@ python app.py
 El backend estará disponible en:
 
 http://127.0.0.1:5000
+
+
 ⚛️ Configuración del Frontend
 
 En otra terminal, entrar al frontend:
 
-cd frontend
+cd crud-front
 
 Instalar las dependencias:
 
@@ -73,6 +100,7 @@ npm run dev
 La aplicación estará disponible normalmente en:
 
 http://localhost:5173
+
 🔗 Comunicación Frontend → Backend
 
 El frontend se comunica con Flask mediante fetch() y una API REST.
@@ -90,6 +118,7 @@ SQLite
 URL del backend en desarrollo:
 
 http://127.0.0.1:5000
+
 📌 Endpoints principales
 Método	Endpoint	Descripción
 GET	/	Verificar API
