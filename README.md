@@ -245,13 +245,15 @@ VITE_API_URL=https://tu-backend.onrender.com
 
 🔐 Variables de entorno
 
-Si el proyecto utiliza variables de entorno, crea un archivo .env y no lo subas a GitHub.
+Si el proyecto utiliza variables de entorno, crea un archivo .env y evita subirlo a GitHub.
 
-Ejemplo:
+Desarrollo
 
-VITE_API_URL=http://127.0.0.1:5000
+VITE_API_URL=http://localhost:5000
 
-En producción se debe configurar la URL correspondiente al backend desplegado.
+Producción
+
+Configura VITE_API_URL con la URL correspondiente al backend desplegado.
 
 ---
 
