@@ -185,7 +185,7 @@ Obtener un producto por ID
 
 Crear un producto
 
--:POST /productos
+- POST /productos
 
 Ejemplo del cuerpo de la petición:
 
