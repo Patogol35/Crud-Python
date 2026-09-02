@@ -149,23 +149,11 @@ La aplicación estará disponible normalmente en:
 
 http://localhost:5173
 
+---
+
 🔗 Comunicación Frontend → Backend
 
 El frontend se comunica con Flask mediante fetch() y una API REST.
-
-Ejemplo:
-
-React
-  ↓
-fetch()
-  ↓
-Flask API
-  ↓
-SQLite
-
-URL del backend en desarrollo:
-
-http://127.0.0.1:5000
 
 ---
 
