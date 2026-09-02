@@ -159,15 +159,35 @@ El frontend se comunica con Flask mediante fetch() y una API REST.
 
 📌 Endpoints principales
 
-Método	Endpoint	Descripción
-GET	/	Verificar API
-GET	/productos	Obtener productos
-GET	/productos/<id>	Obtener un producto
-POST	/productos	Crear producto
-PUT	/productos/<id>	Actualizar producto
-DELETE	/productos/<id>	Eliminar producto
+La API REST permite realizar operaciones CRUD completas sobre los productos.
 
-📦 Ejemplo de producto
+"GET"| "/"| Verificar el funcionamiento de la API
+
+"GET"| "/productos"| Obtener todos los productos
+
+"GET"| "/productos/{id}"| Obtener un producto específico por ID
+
+"POST"| "/productos"| Crear un nuevo producto
+
+"PUT"| "/productos/{id}"| Actualizar un producto existente
+
+"DELETE"| "/productos/{id}"| Eliminar un producto
+
+Ejemplos de uso
+
+Obtener todos los productos
+
+GET /productos
+
+Obtener un producto por ID
+
+GET /productos/1
+
+Crear un producto
+
+POST /productos
+
+Ejemplo del cuerpo de la petición:
 
 {
   "nombre": "Laptop",
@@ -175,6 +195,23 @@ DELETE	/productos/<id>	Eliminar producto
   "precio": 850,
   "categoria": "Tecnología"
 }
+
+Actualizar un producto
+
+PUT /productos/1
+
+Ejemplo del cuerpo de la petición:
+
+{
+  "nombre": "Laptop HP",
+  "descripcion": "Laptop actualizada para trabajo y desarrollo",
+  "precio": 950,
+  "categoria": "Tecnología"
+}
+
+Eliminar un producto
+
+DELETE /productos/1
 
 ---
 
