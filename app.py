@@ -1,6 +1,9 @@
+import os
 import sqlite3
+
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+
 
 app = Flask(__name__)
 
@@ -70,12 +73,7 @@ def obtener_productos():
 
     conexion.close()
 
-    productos_lista = []
-
-    for producto in productos:
-        productos_lista.append(dict(producto))
-
-    return jsonify(productos_lista)
+    return jsonify([dict(producto) for producto in productos])
 
 
 # ==========================================
@@ -110,6 +108,11 @@ def obtener_producto(id):
 def crear_producto():
 
     datos = request.get_json()
+
+    if not datos:
+        return jsonify({
+            "error": "No se enviaron datos"
+        }), 400
 
     nombre = datos.get("nombre")
     descripcion = datos.get("descripcion")
@@ -163,10 +166,25 @@ def actualizar_producto(id):
 
     datos = request.get_json()
 
+    if not datos:
+        return jsonify({
+            "error": "No se enviaron datos"
+        }), 400
+
     nombre = datos.get("nombre")
     descripcion = datos.get("descripcion")
     precio = datos.get("precio")
     categoria = datos.get("categoria")
+
+    if not all([
+        nombre,
+        descripcion,
+        precio is not None,
+        categoria
+    ]):
+        return jsonify({
+            "error": "Todos los campos son obligatorios"
+        }), 400
 
     conexion = conectar_db()
 
@@ -248,6 +266,6 @@ def eliminar_producto(id):
 
 if __name__ == "__main__":
     app.run(
-        debug=True,
-        port=5000
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", 5000))
     )
