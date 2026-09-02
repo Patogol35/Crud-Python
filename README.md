@@ -215,6 +215,34 @@ Eliminar un producto
 
 ---
 
+🌐 Despliegue
+
+El backend puede desplegarse en servicios como Render.
+
+Build Command
+
+
+```bash
+
+pip install -r requirements.txt
+
+```
+
+Start Command 
+
+```bash
+
+python app.py
+
+```
+
+El backend utiliza automáticamente el puerto proporcionado por la plataforma mediante la variable de entorno PORT.
+
+Para el frontend, se debe configurar:
+VITE_API_URL=https://tu-backend.onrender.com
+
+---
+
 🔐 Variables de entorno
 
 Si el proyecto utiliza variables de entorno, crea un archivo .env y no lo subas a GitHub.
@@ -226,6 +254,8 @@ VITE_API_URL=http://127.0.0.1:5000
 En producción se debe configurar la URL correspondiente al backend desplegado.
 
 ---
+
+Objetivo del proyecto
 
 Este proyecto fue desarrollado como una aplicación práctica para demostrar la integración entre un frontend moderno en React y un backend REST desarrollado con Python y Flask, implementando operaciones CRUD y una interfaz responsive.
 
