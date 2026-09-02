@@ -50,52 +50,94 @@ Base de datos
 
 1. Clonar el repositorio
 
+Backend:
+
+```bash
+
 git clone https://github.com/Patogol35/crud-python/
 
-2. Entrar al proyecto
+```
 
-cd crud-python
+Frontend
 
-3. Configuración del Backend
+```bash
+
+git clone https://github.com/Patogol35/crud-react/
+
+ ```
+
+2. Configuración del Backend
 
 Entrar a la carpeta del backend:
 
+```bash
+
 cd crud-python
+
+```
 
 Crear un entorno virtual:
 
+```bash
+
 python -m venv venv
+
+```
 
 Activar el entorno virtual en Windows:
 
+```bash
+
 venv\Scripts\activate
+
+```
 
 Instalar las dependencias:
 
+```bash
+
 pip install flask flask-cors
+
+```
 
 Ejecutar Flask:
 
+```bash
+
 python app.py
+
+```
 
 El backend estará disponible en:
 
 http://127.0.0.1:5000
 
 
-⚛️ Configuración del Frontend
+3. Configuración del Frontend
 
 En otra terminal, entrar al frontend:
 
+```bash
+
 cd crud-front
+
+```
 
 Instalar las dependencias:
 
+```bash
+
 npm install
+
+```
 
 Ejecutar el proyecto:
 
+```bash
+
 npm run dev
+
+```
 
 La aplicación estará disponible normalmente en:
 
@@ -120,6 +162,7 @@ URL del backend en desarrollo:
 http://127.0.0.1:5000
 
 📌 Endpoints principales
+
 Método	Endpoint	Descripción
 GET	/	Verificar API
 GET	/productos	Obtener productos
@@ -144,30 +187,18 @@ VITE_API_URL=http://127.0.0.1:5000
 
 En producción se debe configurar la URL correspondiente al backend desplegado.
 
-🌐 Producción
-
-La arquitectura del proyecto puede desplegarse de la siguiente manera:
-
-Frontend
-React + Vite
-     ↓
-  Vercel
-     ↓
-Backend
-Python + Flask
-     ↓
-Base de datos
-🎯 Objetivo del proyecto
-
 Este proyecto fue desarrollado como una aplicación práctica para demostrar la integración entre un frontend moderno en React y un backend REST desarrollado con Python y Flask, implementando operaciones CRUD y una interfaz responsive.
 
 👨‍💻 Autor
 
 Jorge Patricio Santamaría
 
-Desarrollador de Software
+Máster en Ingeniería de Software y Sistemas Informáticos
 
 ⭐ Si este proyecto te resulta útil, puedes darle una estrella al repositorio.
+
 📱 Diseño responsive
+
 🎨 Interfaz desarrollada con Material UI
+
 🔗 Comunicación entre React y Flask mediante API REST
