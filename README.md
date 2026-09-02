@@ -161,31 +161,31 @@ El frontend se comunica con Flask mediante fetch() y una API REST.
 
 La API REST permite realizar operaciones CRUD completas sobre los productos.
 
-"GET"| "/"| Verificar el funcionamiento de la API
+- "GET"| "/"| Verificar el funcionamiento de la API
 
-"GET"| "/productos"| Obtener todos los productos
+- "GET"| "/productos"| Obtener todos los productos
 
-"GET"| "/productos/{id}"| Obtener un producto específico por ID
+- "GET"| "/productos/{id}"| Obtener un producto específico por ID
 
-"POST"| "/productos"| Crear un nuevo producto
+- "POST"| "/productos"| Crear un nuevo producto
 
-"PUT"| "/productos/{id}"| Actualizar un producto existente
+- "PUT"| "/productos/{id}"| Actualizar un producto existente
 
-"DELETE"| "/productos/{id}"| Eliminar un producto
+- "DELETE"| "/productos/{id}"| Eliminar un producto
 
 Ejemplos de uso
 
 Obtener todos los productos
 
-GET /productos
+- GET /productos
 
 Obtener un producto por ID
 
-GET /productos/1
+- GET /productos/1
 
 Crear un producto
 
-POST /productos
+-:POST /productos
 
 Ejemplo del cuerpo de la petición:
 
@@ -198,7 +198,7 @@ Ejemplo del cuerpo de la petición:
 
 Actualizar un producto
 
-PUT /productos/1
+- PUT /productos/1
 
 Ejemplo del cuerpo de la petición:
 
@@ -211,7 +211,7 @@ Ejemplo del cuerpo de la petición:
 
 Eliminar un producto
 
-DELETE /productos/1
+- DELETE /productos/1
 
 ---
 
