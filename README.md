@@ -4,6 +4,8 @@ Aplicación web para la gestión de productos mediante una interfaz moderna desa
 
 El sistema permite realizar operaciones CRUD completas sobre los productos: crear, consultar, actualizar y eliminar.
 
+---
+
 🚀 Tecnologías utilizadas:
 
 - Frontend
@@ -32,6 +34,8 @@ Base de datos
 
 - SQLite
 
+---
+
 ✨ Funcionalidades
 
 - Listar productos
@@ -45,6 +49,8 @@ Base de datos
 - Actualizar listado
 
 - Notificaciones mediante Snackbar
+
+---
 
 ⚙️ Instalación
 
@@ -161,6 +167,8 @@ URL del backend en desarrollo:
 
 http://127.0.0.1:5000
 
+---
+
 📌 Endpoints principales
 
 Método	Endpoint	Descripción
@@ -170,13 +178,18 @@ GET	/productos/<id>	Obtener un producto
 POST	/productos	Crear producto
 PUT	/productos/<id>	Actualizar producto
 DELETE	/productos/<id>	Eliminar producto
+
 📦 Ejemplo de producto
+
 {
   "nombre": "Laptop",
   "descripcion": "Laptop para trabajo y desarrollo",
   "precio": 850,
   "categoria": "Tecnología"
 }
+
+---
+
 🔐 Variables de entorno
 
 Si el proyecto utiliza variables de entorno, crea un archivo .env y no lo subas a GitHub.
@@ -187,13 +200,19 @@ VITE_API_URL=http://127.0.0.1:5000
 
 En producción se debe configurar la URL correspondiente al backend desplegado.
 
+---
+
 Este proyecto fue desarrollado como una aplicación práctica para demostrar la integración entre un frontend moderno en React y un backend REST desarrollado con Python y Flask, implementando operaciones CRUD y una interfaz responsive.
+
+---
 
 👨‍💻 Autor
 
 Jorge Patricio Santamaría
 
 Máster en Ingeniería de Software y Sistemas Informáticos
+
+---
 
 ⭐ Si este proyecto te resulta útil, puedes darle una estrella al repositorio.
 
